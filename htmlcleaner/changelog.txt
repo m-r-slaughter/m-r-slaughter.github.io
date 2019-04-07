@@ -1,4 +1,0 @@
-Version 1.3 - Added tests, refactored functions.
-Version 1.2 - Changed UI, increased HTML font size.
-Version 1.1 - Fixed the cross population of RTF and HTML areas.
-Version 1.0 - Added Tiny MCE and second textarea for HTML.
