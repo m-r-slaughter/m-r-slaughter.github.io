@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Word/HTML Utility</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="includes/site.css" rel="stylesheet">
+    <style>
+      .row .btn {
+        margin: 5px 5px 5px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main role="main">
+      <div class="jumbotron">
+        <div class="container text-center">
+          <!----<h1 class="display-3">Word/HTML Utility</h1>-->
+          <img src="includes/images/Jamies-Logo-made-with-love.png" alt="Jamie's Logo made with Love By Angle" class="img-responsive shadow-lg rounded" style="margin: 0 auto;">
+          <p style="padding-top: 15px;">Full featured RTF to HTML Cleaner utilizing Tiny MCE.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-6">
+                  <form class="form" role="form">
+                    <div class="form-group">
+                      <textarea placeholder="" class="form-control" id="formValueId" rows="3"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-6">
+                  <form class="form" role="form">
+                    <div class="form-group">
+                      <textarea name="" id="html-area" style="width: 100%; height: 601px;padding: 10px;" class="form-group"></textarea>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-10">
+                <button type="button" class="btn btn-success" id="hyphen-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with - in the text area">Replace all with -</button>
+                <button type="button" class="btn btn-success" id="underscore-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with _ in the text area">Replace all with _</button>
+                <button type="button" class="btn btn-success" id="space-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with space in the text area">Replace all with space</button>
+                <button type="button" class="btn btn-success" id="period-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with . in the text area">Replace all with .</button>
+                <button type="button" class="btn btn-success" id="upcase-id" style="margin-right: 5px;" title="Upcase each word in the text area">UPCASE</button>
+                <button type="button" class="btn btn-success" id="lowercase-id" style="margin-right: 5px;" title="Lowercase each word in the text area">lowercase</button>
+                <button type="button" class="btn btn-success" id="titlecase-id" style="margin-right: 5px;" title="Upcase the first letter of each word in the text area">TitleCase</button>
+                <button type="button" class="btn btn-success" id="sitecore-id" style="margin-right: 5px;" title="Removes brackets and downcases Sitecore IDs in text area">Clean Sitecore ID</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" class="btn btn-danger" id="clear-id" style="float:right;" title="Clears both text and html areas">Clear</button>
+                  <button type="button" class="btn btn-warning" id="clean-id" style="float:right;" title="Cleans styles, encoded spaces, classes, and breaks from html area">Clean</button>
+                </div>
+              </div>
+      <hr>
+
+    </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>Site Created by: <a href="mailto:jamie.mccaw@raymondjames.com">Jamie McCaw</a> // Logo Created by: <a href="mailto:angle.to@raymondjames.com">Angle To</a>
+        <span style="float: right;"><a href="https://github.com/facebook/jest" target="_blank"><img src="https://img.shields.io/badge/tested_with-jest-99424f.svg" alt="tested with jest"></a> Alpha 1.4</span></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="includes/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="includes/tinyMCE.js"></script>
+    <script src="includes/buttons.js"></script>
+    <script src="includes/sanitize.js"></script>
+  </body>
+</html>
