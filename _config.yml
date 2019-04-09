@@ -1,4 +1,4 @@
 name: Jamie McCaw
 markdown: kramdown
-encoding: UTF-8
 permalink: /blog/:year/:month/:day/:title
+encoding: UTF-8
