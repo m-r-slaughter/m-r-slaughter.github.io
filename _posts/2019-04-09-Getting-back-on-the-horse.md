@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Back on the Horse"
+title: Getting Back on the Horse
 date: 2019-04-09
 ---
 
