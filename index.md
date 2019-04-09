@@ -7,7 +7,7 @@ title: Jamie McCaw | Developer
         <li>
             <a href="text-editor.html" target="_blank">
                 <img src="images/word-cleaner-screen-shot.png" alt="Screen Shot of Word-HTML Cleaner">
-                <p>Twitter/Facebook style status posting to a board.</p>
+                <p>A RTF to HTML Converter/Cleaner using MCE.</p>
             </a>
         </li>
         <li>
