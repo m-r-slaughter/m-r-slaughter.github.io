@@ -17,22 +17,22 @@
         </a>
         <nav>
             <ul>
-                {% if page.name == "index.md" %}
-                <li><a href="index.html" class="selected">Portfolio</a></li>
+                {% if page.dir == "/" %}
+                <li><a href="/" class="selected">Portfolio</a></li>
                 {% else %}
-                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="/">Portfolio</a></li>
                 {% endif %}
 
-                {% if page.name == "about.md" %}
-                <li><a href="about.html" class="selected">About</a></li>
+                {% if page.dir == "/about/" %}
+                <li><a href="/about" class="selected">About</a></li>
                 {% else %}
-                <li><a href="about.html">About</a></li>
+                <li><a href="/about">About</a></li>
                 {% endif %}
 
-                {% if page.name == "contact.md" %}
-                <li><a href="contact.html" class="selected">Contact</a></li>
+                {% if page.dir == "/contact/" %}
+                <li><a href="/contact" class="selected">Contact</a></li>
                 {% else %}
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
                 {% endif %}
             </ul>
         </nav>

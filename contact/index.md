@@ -1,6 +1,6 @@
 ﻿---
 layout: default
-title: About - Jamie McCaw | Developer
+title: Contact - Jamie McCaw | Developer
 ---
 <section id="primary">
 <h3>General Information</h3>
