@@ -2,7 +2,7 @@
 layout: default
 title: Jamie McCaw | Developer
 ---
-<div>
+<section>
     <ul id="gallery">
         <li>
             <a href="https://treeter.herokuapp.com/">
@@ -18,4 +18,4 @@ title: Jamie McCaw | Developer
         </li>
         <li>
     </ul>
-</div>
+</section>
