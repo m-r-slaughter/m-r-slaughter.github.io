@@ -212,3 +212,7 @@ nav a, nav a:visited {
 nav a.selected, nav a:hover {
   color: #FF606E;
 }
+
+ul {
+    list-style-type: none;
+}
