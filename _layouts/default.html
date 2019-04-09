@@ -29,6 +29,12 @@
                 <li><a href="/about">About</a></li>
                 {% endif %}
 
+                {% if page.dir == "/blog/" %}
+                <li><a href="/blog" class="selected">Blog</a></li>
+                {% else %}
+                <li><a href="/blog">Blog</a></li>
+                {% endif %}
+
                 {% if page.dir == "/contact/" %}
                 <li><a href="/contact" class="selected">Contact</a></li>
                 {% else %}
