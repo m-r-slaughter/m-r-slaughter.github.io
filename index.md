@@ -22,6 +22,5 @@ title: Jamie McCaw | Developer
                 <p>Unbeatable Tic Tac Toe game built using rails, Single Player vs AI or Player vs Player</p>
             </a>
         </li>
-        <li>
     </ul>
 </section>
