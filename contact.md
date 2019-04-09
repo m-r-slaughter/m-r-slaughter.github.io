@@ -12,6 +12,6 @@ title: About - Jamie McCaw | Developer
 <ul class="contact-info">
     <li class="phone"><a href="tel:813-944-8621">813-944-8621</a></li>
     <li class="mail"><a href="mailto:jamie.b.mccaw@gmail.com">jamie.b.mccaw@gmail.com</a></li>
-    <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=psiral">@psiral</a></li>
+    <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=psiral" target="_blank">@psiral</a></li>
 </ul>
 </section>

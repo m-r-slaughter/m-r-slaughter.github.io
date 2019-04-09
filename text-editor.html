@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -30,43 +30,44 @@
       </div>
 
       <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-              <div class="row">
-                <div class="col-md-6">
-                  <form class="form" role="form">
-                    <div class="form-group">
-                      <textarea placeholder="" class="form-control" id="formValueId" rows="3"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-md-6">
-                  <form class="form" role="form">
-                    <div class="form-group">
-                      <textarea name="" id="html-area" style="width: 100%; height: 601px;padding: 10px;" class="form-group"></textarea>
-                    </div>
-                  </form>
-                </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <form class="form" role="form">
+                              <div class="form-group">
+                                  <textarea placeholder="" class="form-control" id="formValueId" rows="3"></textarea>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="col-md-6">
+                          <form class="form" role="form">
+                              <div class="form-group">
+                                  <textarea name="" id="html-area" style="width: 100%; height: 601px;padding: 10px;" class="form-group"></textarea>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-10">
+                          <button type="button" class="btn btn-success" id="hyphen-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with - in the text area">Replace all with -</button>
+                          <button type="button" class="btn btn-success" id="underscore-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with _ in the text area">Replace all with _</button>
+                          <button type="button" class="btn btn-success" id="space-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with space in the text area">Replace all with space</button>
+                          <button type="button" class="btn btn-success" id="period-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with . in the text area">Replace all with .</button>
+                          <button type="button" class="btn btn-success" id="upcase-id" style="margin-right: 5px;" title="Upcase each word in the text area">UPCASE</button>
+                          <button type="button" class="btn btn-success" id="lowercase-id" style="margin-right: 5px;" title="Lowercase each word in the text area">lowercase</button>
+                          <button type="button" class="btn btn-success" id="titlecase-id" style="margin-right: 5px;" title="Upcase the first letter of each word in the text area">TitleCase</button>
+                          <button type="button" class="btn btn-success" id="sitecore-id" style="margin-right: 5px;" title="Removes brackets and downcases Sitecore IDs in text area">Clean Sitecore ID</button>
+                      </div>
+                      <div class="col-md-2">
+                          <button type="button" class="btn btn-danger" id="clear-id" style="float:right;" title="Clears both text and html areas">Clear</button>
+                          <button type="button" class="btn btn-warning" id="clean-id" style="float:right;" title="Cleans styles, encoded spaces, classes, and breaks from html area">Clean</button>
+                      </div>
+                  </div>
+                  <hr>
               </div>
-              <div class="row">
-                <div class="col-md-10">
-                <button type="button" class="btn btn-success" id="hyphen-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with - in the text area">Replace all with -</button>
-                <button type="button" class="btn btn-success" id="underscore-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with _ in the text area">Replace all with _</button>
-                <button type="button" class="btn btn-success" id="space-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with space in the text area">Replace all with space</button>
-                <button type="button" class="btn btn-success" id="period-id" style="margin-right: 5px;" title="Replaces all instances of &\/#,_+().$~%'&#8221:*?<>{}- with . in the text area">Replace all with .</button>
-                <button type="button" class="btn btn-success" id="upcase-id" style="margin-right: 5px;" title="Upcase each word in the text area">UPCASE</button>
-                <button type="button" class="btn btn-success" id="lowercase-id" style="margin-right: 5px;" title="Lowercase each word in the text area">lowercase</button>
-                <button type="button" class="btn btn-success" id="titlecase-id" style="margin-right: 5px;" title="Upcase the first letter of each word in the text area">TitleCase</button>
-                <button type="button" class="btn btn-success" id="sitecore-id" style="margin-right: 5px;" title="Removes brackets and downcases Sitecore IDs in text area">Clean Sitecore ID</button>
-                </div>
-                <div class="col-md-2">
-                  <button type="button" class="btn btn-danger" id="clear-id" style="float:right;" title="Clears both text and html areas">Clear</button>
-                  <button type="button" class="btn btn-warning" id="clean-id" style="float:right;" title="Cleans styles, encoded spaces, classes, and breaks from html area">Clean</button>
-                </div>
-              </div>
-      <hr>
-
-    </div> <!-- /container -->
+          </div>
+      </div> <!-- /container -->
 
     </main>
 
