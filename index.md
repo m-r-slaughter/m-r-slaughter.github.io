@@ -23,9 +23,5 @@ title: Jamie McCaw | Developer
                 </a>
             </li>
         </ul>
-        {% for repository in site.github.public_repositories %}
-        <a href='{{ repository.html_url }}'>
-            {{ repository.name }}
-        </a>
-        {% endfor %}
+    {% include repo.html %}
     </section>
