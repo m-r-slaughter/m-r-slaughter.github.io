@@ -23,5 +23,4 @@ title: Jamie McCaw | Developer
                 </a>
             </li>
         </ul>
-    {% include repo.html %}
     </section>
