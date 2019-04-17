@@ -14,12 +14,20 @@
     float: right;
   }
 
+
+
   /**********************************
   PAGE: PORTFOLIO
   ***********************************/
 
   #gallery li {
-    width: 28.3333%;
+    width: 45%;
+  }
+
+  #gallery .languages li {
+    width: initial;
+    padding: 5px 10px;
+    margin: 5px;
   }
 
   #gallery li:nth-child(4n) {
@@ -35,6 +43,18 @@
     margin: 0 5% 80px 0;
   }
 
+}
+
+@media screen and (max-width: 479px){
+  #gallery li {
+    width: 96%;
+  }
+
+  #gallery .languages li {
+    width: initial;
+    padding: 5px 10px;
+    margin: 5px;
+  }
 }
 
 @media screen and (min-width: 660px) {
@@ -69,8 +89,20 @@
   }
 
   header {
-    border-bottom: 5px solid #FFFFFF;
+    /* border-bottom: 5px solid #FFFFFF; */
     margin-bottom: 60px;
   }
 
+}
+
+
+@media screen and (max-width: 768px){
+  nav a {
+    padding: 15px 10px;
+  }
+}
+@media screen and (min-width: 769px){
+  nav a {
+    padding: 15px 20px;
+  }
 }
