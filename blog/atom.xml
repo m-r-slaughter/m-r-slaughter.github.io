@@ -8,7 +8,7 @@ layout: feed
 	<link href="http://jamiemccaw.dev/blog/atom.xml" rel="self"/>
 	<link href="http://jamiemccaw.dev/blog"/>
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://hankquinlan.github.io/blog</id>
+	<id>http://jamiemccaw.dev/blog</id>
 	<author>
 		<name>Jamie McCaw</name>
 		<email>jamie.b.mccaw@gmail.com</email>

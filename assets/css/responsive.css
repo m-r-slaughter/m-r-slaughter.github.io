@@ -30,7 +30,7 @@
     margin: 5px;
   }
 
-  #gallery li:nth-child(4n) {
+  #gallery .project-list:nth-child(3n) {
     clear: left;
   }
 

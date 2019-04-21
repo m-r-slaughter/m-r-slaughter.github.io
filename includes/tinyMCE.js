@@ -20,7 +20,7 @@ tinymce.init({
         updateHTMLArea(tinyMCE.activeEditor.getContent());
       });
     },
-    plugins : 'advlist autolink link image lists charmap print preview paste code wordcount hr visualblocks visualchars',
+    plugins : 'advlist autolink link image lists charmap print preview paste code wordcount hr visualblocks visualchars table',
     branding: false,
     element_format: 'html',
     extended_valid_elements : "span[!class]",
