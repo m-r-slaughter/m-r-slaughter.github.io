@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="/assets/js/rotate.js"></script>
     {% include analytics.html %}
 </head>
 <body>
     <header>
         <a href="/" id="logo">
             <h1 class="logo">Jamie McCaw</h1>
-            <h2 class="logo"><span class="txt-rotate" data-period="2000" data-rotate='[ "Craftsperson.", "Gamer.", "Nerd.", "Not 3 Dogs in a trenchcoat.", "Mentor." ]'></span></h2>
+            <h2 class="logo" id="descriptions"></h2>
         </a>
         <nav>
             <ul>
@@ -55,5 +54,7 @@
             <p>&copy; 2019 Jamie McCaw.</p>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
+    <script type="text/javascript" src="/assets/js/site.js"></script>
 </body>
 </html>

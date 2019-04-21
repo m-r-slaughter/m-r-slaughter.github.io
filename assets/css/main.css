@@ -243,7 +243,9 @@ h3 {
 .logo {
   color: #f6f6f9;
 }
-
+#logo h2{
+    min-height: 1.2em;
+}
 /* links */
 a {
   color: #bdbfe5;
