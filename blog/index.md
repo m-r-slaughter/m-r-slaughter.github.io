@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog - Jamie McCaw | Developer
+title: Blog - M R Slaughter
 ---
 <section>
 	<h3>Blog</h3>

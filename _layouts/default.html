@@ -15,44 +15,16 @@
 <body>
     <header>
         <a href="/" id="logo">
-            <h1 class="logo">Jamie McCaw</h1>
+            <h1 class="logo">M R Slaughter</h1>
             <h2 class="logo" id="descriptions"></h2>
         </a>
         <nav>
-            <ul>
-                {% if page.dir == "/" %}
-                <li><a href="/" class="selected">Side Projects</a></li>
-                {% else %}
-                <li><a href="/">Side Projects</a></li>
-                {% endif %}
-
-                {% if page.dir == "/about/" %}
-                <li><a href="/about" class="selected">About</a></li>
-                {% else %}
-                <li><a href="/about">About</a></li>
-                {% endif %}
-
-                {% if page.dir == "/blog/" %}
-                <li><a href="/blog" class="selected">Blog</a></li>
-                {% else %}
-                <li><a href="/blog">Blog</a></li>
-                {% endif %}
-
-                {% if page.dir == "/contact/" %}
-                <li><a href="/contact" class="selected">Contact</a></li>
-                {% else %}
-                <li><a href="/contact">Contact</a></li>
-                {% endif %}
-            </ul>
         </nav>
     </header>
     <div id="wrapper">
         {{ content }}
         <footer>
-            <a href="http://twitter.com/psiral" target="_blank"><i class="fab fa-twitter-square social-icon fa-3x"></i></a>
-            <a href="https://www.linkedin.com/in/jamiemccaw/" target="_blank"><i class="fab fa-linkedin social-icon fa-3x"></i></a>
-            <a href="http://github.com/jamie-mccaw" target="_blank"><i class="fab fa-github-square social-icon fa-3x"></i></a>
-            <p>&copy; 2020 Jamie McCaw.</p>
+            <p>&copy; 2024 M R Slaughter</p>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.2/dist/typeit.min.js"></script>
