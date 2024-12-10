@@ -190,27 +190,7 @@ COLORS
 
 /* site body */
 body {
-  background: -moz-linear-gradient(135deg, rgba(56,70,226,1) 0%, rgba(36,33,98,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(36,33,98,1)), color-stop(100%, rgba(56,70,226,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(135deg, rgba(56,70,226,1) 0%, rgba(36,33,98,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(135deg, rgba(56,70,226,1) 0%, rgba(36,33,98,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(135deg, rgba(56,70,226,1) 0%, rgba(36,33,98,1) 100%); /* ie10+ */
-  background: linear-gradient(315deg, rgba(56,70,226,1) 0%, rgba(36,33,98,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242162', endColorstr='#3846e2',GradientType=1 ); /* ie6-9 */
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: #bdbfe5;
-
-  background: -moz-linear-gradient(325deg, rgba(35,36,95,1) 0%, rgba(35,36,95,1) 33%, rgba(57,60,219,1) 100%); /* ff3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(35,36,95,1)), color-stop(33%, rgba(35,36,95,1)), color-stop(100%, rgba(57,60,219,1))); /* safari4+,chrome */
-background: -webkit-linear-gradient(325deg, rgba(35,36,95,1) 0%, rgba(35,36,95,1) 33%, rgba(57,60,219,1) 100%); /* safari5.1+,chrome10+ */
-background: -o-linear-gradient(325deg, rgba(35,36,95,1) 0%, rgba(35,36,95,1) 33%, rgba(57,60,219,1) 100%); /* opera 11.10+ */
-background: -ms-linear-gradient(325deg, rgba(35,36,95,1) 0%, rgba(35,36,95,1) 33%, rgba(57,60,219,1) 100%); /* ie10+ */
-background: linear-gradient(125deg, rgba(35,36,95,1) 0%, rgba(35,36,95,1) 33%, rgba(57,60,219,1) 100%); /* w3c */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23245F', endColorstr='#393CDB',GradientType=1 ); /* ie6-9 */
-background-repeat: no-repeat;
-background-attachment: fixed;
-color: #bdbfe5;
+  background-color: black;
 }
 
 /* green header */
@@ -226,10 +206,10 @@ nav {
 
 /* logo text */
 h1, h2 {
-  color: #1fcb75;
+  color: red;
 }
 h3 {
-  color: #1fcb75;
+  color: red;
 }
 .social-icon {
   color: #1fcb75;
