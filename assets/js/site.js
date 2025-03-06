@@ -5,4 +5,4 @@ function getCurrentYear(){
   
   let dateSpan = document.querySelector('.date');
   
-  dateSpan.innerHTML = getCurrentYear;
+  dateSpan.innerHTML = getCurrentYear();
