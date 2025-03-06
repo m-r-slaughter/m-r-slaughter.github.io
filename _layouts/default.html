@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    {% if page.dir != "/" %}
     <header>
         <a href="/" id="logo">
             <h1 class="logo">M R Slaughter</h1>
@@ -43,6 +44,7 @@
             </ul> -->
         </nav>
     </header>
+    {% endif %}
     <div id="wrapper">
         {{ content }}
         <footer>
