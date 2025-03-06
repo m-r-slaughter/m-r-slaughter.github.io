@@ -16,8 +16,9 @@
         <a href="/" id="logo">
             <h1 class="logo">M R Slaughter</h1>
         </a>
+        {% if page.dir != "/slaughter-house/" %}
         <nav>
-            <!-- <ul>
+            <ul>
                 {% if page.dir == "/" %}
                 <li><a href="/" class="selected">Side Projects</a></li>
                 {% else %}
@@ -41,8 +42,9 @@
                 {% else %}
                 <li><a href="/contact">Contact</a></li>
                 {% endif %}
-            </ul> -->
+            </ul>
         </nav>
+        {% endif %}
     </header>
     {% endif %}
     <div id="wrapper">
