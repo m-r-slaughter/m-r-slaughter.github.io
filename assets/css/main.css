@@ -4,7 +4,7 @@ FONTS
 
 @font-face {
   font-family: "Ghastly Panic";
-  src: url("assets/fonts/ghastly_panic.ttf") format("truetype");
+  src: url("../fonts/ghastly_panic.ttf") format("truetype");
 }
 
 /**********************************
