@@ -99,6 +99,12 @@ nav a {
   font-weight: 800;
 }
 
+.slaughter-button {
+  text-decoration: none;
+  color: black;
+  background-color: red;
+}
+
 
 
 /**********************************
