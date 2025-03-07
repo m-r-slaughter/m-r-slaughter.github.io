@@ -134,10 +134,24 @@ nav a {
 
 .slaughter-pages a {
   font-family: 'Ghastly Panic', sans-serif;
-  padding: 10px 0;
-  margin: 20px 0 0;
+  position: relative;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 800;
+  color: royalblue;
+  overflow: hidden;
+  background: linear-gradient(to bottom, midnightblue, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
   text-decoration: none;
-  color: white;
+}
+
+.slaughter-pages a:hover {
+  background-position: 0 100%;
 }
 
 /**********************************
