@@ -22,27 +22,27 @@
         <nav>
             <ul>
                 {% if page.dir == "/" %}
-                <li><a href="/slaughter-house/" class="selected">Slaughter House</a></li>
+                <li><a href="/slaughter-house/" class="selected"><span data-content="Slaughter House" aria-hidden="true"></span>Slaughter House</a></li>
                 {% else %}
-                <li><a href="/slaughter-house/">Slaughter House</a></li>
+                <li><a href="/slaughter-house/"><span data-content="Slaughter House" aria-hidden="true"></span>Slaughter House</a></li>
                 {% endif %}
 
                 {% if page.dir == "/about/" %}
-                <li><a href="/about" class="selected">About</a></li>
+                <li><a href="/about" class="selected"><span data-content="About" aria-hidden="true"></span>About</a></li>
                 {% else %}
-                <li><a href="/about">About</a></li>
+                <li><a href="/about"><span data-content="About" aria-hidden="true"></span>About</a></li>
                 {% endif %}
 
-                {% if page.dir == "/blog/" %}
-                <li><a href="/poe-log" class="selected">Poe-log</a></li>
+                {% if page.dir == "/poe-log/" %}
+                <li><a href="/poe-log" class="selected"><span data-content="Poe-log" aria-hidden="true"></span>Poe-log</a></li>
                 {% else %}
-                <li><a href="/poe-log">Poe-log</a></li>
+                <li><a href="/poe-log"><span data-content="Poe-log" aria-hidden="true"></span>Poe-log</a></li>
                 {% endif %}
 
-                {% if page.dir == "/contact/" %}
-                <li><a href="/slashing-stories" class="selected">Slashing Stories</a></li>
+                {% if page.dir == "/slashing-stories/" %}
+                <li><a href="/slashing-stories" class="selected"><span data-content="Slashing Stories" aria-hidden="true"></span>Slashing Stories</a></li>
                 {% else %}
-                <li><a href="/slashing-stories">Slashing Stories</a></li>
+                <li><a href="/slashing-stories"><span data-content="Slashing Stories" aria-hidden="true"></span>Slashing Stories</a></li>
                 {% endif %}
             </ul>
         </nav>
