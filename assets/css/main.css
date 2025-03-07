@@ -41,6 +41,10 @@ h3 {
   margin: 0 0 1em 0;
 }
 
+p {
+  color: white;
+}
+
 
 /**********************************
 HEADING
@@ -116,7 +120,6 @@ nav a {
 }
 
 .slaughter-button {
-  font-family: 'Ghastly Panic', sans-serif;
   position: relative;
   display: inline-block;
   font-size: 4em;
