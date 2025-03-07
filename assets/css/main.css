@@ -73,6 +73,12 @@ h1 {
   font-size: 10.25em;
 }
 
+@media screen and (max-width: 479px){
+  .intro-text {
+    padding: 1em 0;
+  }
+}
+
 .intro {
   text-align: center;
 }
