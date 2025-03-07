@@ -3,7 +3,7 @@ layout: default
 title: Poe-log - M R Slaughter
 ---
 <section>
-	<h3>Poe-log</h3>
+	<h2>Poe-log</h2>
 	<ul class="posts">
 		{% for post in site.posts %}
 		<li>
