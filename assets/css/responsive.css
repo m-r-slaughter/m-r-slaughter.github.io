@@ -55,6 +55,10 @@
     padding: 5px 10px;
     margin: 5px;
   }
+
+  ul {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 660px) {
