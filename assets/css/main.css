@@ -69,7 +69,7 @@ header {
 
 h1 {
   font-family: 'Ghastly Panic', sans-serif;
-  margin: 15px 0;
+  /* margin: 15px 0; */
   font-size: 1.75em;
   font-weight: normal;
   line-height: 0.8em;
@@ -96,7 +96,7 @@ h1 {
 h2 {
   font-family: 'Ghastly Panic', sans-serif;
   font-size: 0.75em;
-  margin: -5px 0 0;
+  /* margin: -5px 0 0; */
   font-weight: normal;
 }
 
@@ -109,7 +109,7 @@ NAVIGATION
 nav {
   text-align: center;
   padding: 10px 0;
-  margin: 20px 0 0;
+  /* margin: 20px 0 0; */
 }
 
 nav ul {
