@@ -9,5 +9,3 @@ title: Slaughter House
       <li><a href="/slashing-stories"><span data-content="Slashing Stories" aria-hidden="true"></span>Slashing Stories</a></li>
   </ul>
 </section>
-
-<a href="#"><span data-content="Link Hover" aria-hidden="true"></span>Link Hover</a>

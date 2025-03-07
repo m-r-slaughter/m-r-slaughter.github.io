@@ -138,7 +138,6 @@ nav a {
   display: inline-block;
   font-size: 4em;
   color: white;
-  font-weight: 800;
   text-decoration: none;
   overflow: hidden;
   span {
@@ -147,13 +146,13 @@ nav a {
     left: 0;
     overflow: hidden;
     transform: translateY(-100%);
-    transition: transform 275ms ease;
+    transition: transform 500ms ease;
     &::before {
       display: inline-block;
       content: attr(data-content);
       color: red;
       transform: translateY(100%);
-      transition: transform 275ms ease;
+      transition: transform 500ms ease;
     }
   }
   &:hover {
