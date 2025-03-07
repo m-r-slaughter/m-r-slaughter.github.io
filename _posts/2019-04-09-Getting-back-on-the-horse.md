@@ -4,7 +4,7 @@ title: Example
 date: 2024-12-10
 ---
 
-# The Curious Case of the Missing Quokka
+# The Curious Case of the Missing Quokka (don't use this, as this creates a second title)
 
 In the quaint village of *Eucalyptus Glen*, nestled amidst towering gum trees, lived a peculiar quokka named Quentin. Quentin, unlike his fellow quokkas, possessed an insatiable curiosity, a trait that often led him into rather... interesting situations.
 
