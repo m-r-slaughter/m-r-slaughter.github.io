@@ -8,7 +8,7 @@ title: Poe-log - M R Slaughter
 		{% assign poems = site.posts | where: "section", "poetry" %}
 		{% for post in poems %}
 		<li>
-		<span>{{ post.date | date_to_string }}</span> &mdash;
+		<span>{% if post.date_display %}{{ post.date_display }}{% else %}{{ post.date | date_to_string }}{% endif %}</span> &mdash;
 		<a href="{{ post.url }}" title="{{ post.title }}" class="paragraph-link">{{ post.title }}</a>
 		</li>
 		{% endfor %}

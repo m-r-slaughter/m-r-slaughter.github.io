@@ -8,7 +8,7 @@ title: Slashing Stories - M R Slaughter
 		{% assign stories = site.posts | where: "section", "stories" %}
 		{% for post in stories %}
 		<li>
-		<span>{{ post.date | date_to_string }}</span> &mdash;
+		<span>{% if post.date_display %}{{ post.date_display }}{% else %}{{ post.date | date_to_string }}{% endif %}</span> &mdash;
 		<a href="{{ post.url }}" title="{{ post.title }}" class="paragraph-link">{{ post.title }}</a>
 		</li>
 		{% endfor %}

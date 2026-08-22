@@ -3,7 +3,7 @@ layout: default
 ---
     <section>
         <h2>{{ page.title }}</h2>
-        <p class="meta">{{ page.date | date_to_string }}</p>
+        <p class="meta">{% if page.date_display %}{{ page.date_display }}{% else %}{{ page.date | date_to_string }}{% endif %}</p>
 
         <div class="post">
             {{ content }}
