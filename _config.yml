@@ -4,3 +4,9 @@ permalink: /blog/:year/:month/:day/:title
 encoding: UTF-8
 plugins:
   - jekyll-github-metadata
+
+# Treat a single line break as a real line break, so poems keep
+# their shape instead of running together into one paragraph.
+kramdown:
+  input: GFM
+  hard_wrap: true

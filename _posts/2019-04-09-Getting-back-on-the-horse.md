@@ -2,6 +2,7 @@
 layout: post
 title: Example
 date: 2024-12-10
+section: stories
 ---
 
 # The Curious Case of the Missing Quokka (don't use this, as this creates a second title)
