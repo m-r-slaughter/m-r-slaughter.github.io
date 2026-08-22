@@ -248,7 +248,7 @@ PAGE: CONTACT
 }
 
 .paragraph-link:hover {
-  color: #bdbfe5;
+  color: red;
   transition: all ease-in-out .2s;
 }
 
