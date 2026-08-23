@@ -524,3 +524,93 @@ PAGE: ABOUT (portrait + text)
 .about-page li {
   line-height: 1.6;
 }
+
+/**********************************
+PAGE: LANDING (grimoire direction)
+***********************************/
+
+.landing-hero {
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #e8dcc0; /* aged parchment for prose on the landing */
+}
+
+.landing-frame {
+  max-width: 640px;
+  padding: 20px 20px;
+}
+
+.landing-flourish {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 340px;
+  height: 32px;
+  color: #a17e46; /* tarnished gold */
+  opacity: 0.85;
+}
+.landing-flourish-top    { margin-bottom: 26px; }
+.landing-flourish-bottom { margin-top: 48px; }
+
+.landing-eyebrow {
+  display: block;
+  font-family: "IM Fell English SC", "IM Fell English", Georgia, serif;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #a17e46;
+  margin-bottom: 18px;
+}
+
+/* The name keeps her horror typeface so the landing still reads as her site,
+   just given breathing room and a warm red glow rather than a hard pure red. */
+.landing-name {
+  font-family: "Ghastly Panic", "Cormorant Garamond", serif;
+  font-weight: normal;
+  font-size: clamp(4rem, 12vw, 8.5rem);
+  line-height: 0.95;
+  color: red;
+  margin: 0;
+  text-shadow: 0 0 40px rgba(201, 72, 75, 0.35);
+}
+
+.landing-tag {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  color: #b8a988;
+  line-height: 1.55;
+  max-width: 44ch;
+  margin: 24px auto 40px;
+}
+
+.landing-enter {
+  display: inline-block;
+  font-family: "IM Fell English SC", "IM Fell English", Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.55em;
+  font-size: 13px;
+  color: #e8dcc0;
+  padding: 14px 34px 12px;
+  border: 1px solid #a17e46;
+  background: transparent;
+  transition: color .35s ease, background .35s ease, letter-spacing .35s ease;
+}
+.landing-enter span { display: inline-block; padding-left: 0.55em; }
+.landing-enter:hover {
+  color: #100b08;
+  background: #e8dcc0;
+  letter-spacing: 0.7em;
+}
+
+.landing-lily {
+  display: block;
+  width: clamp(70px, 14vw, 120px);
+  height: auto;
+  margin: 18px auto 0;
+  color: red;
+  filter: drop-shadow(0 0 18px rgba(201, 72, 75, 0.35));
+}
