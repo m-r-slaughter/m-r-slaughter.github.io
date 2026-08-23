@@ -1202,3 +1202,24 @@ GRIMOIRE — NEUTRALIZE OLD NAV SPAN POSITIONING
   content: none !important;
   display: none !important;
 }
+
+/**********************************
+GRIMOIRE — TITLE & WHISPER SIZE
+***********************************/
+
+/* Make section titles noticeably larger, and give the little subtitle line
+   beneath them more presence. */
+#wrapper > section > h2,
+.menu-page h2,
+.listing-page h2,
+.about-page h2 {
+  font-size: clamp(2.75rem, 6.5vw, 4.25rem);
+  line-height: 1.05;
+  margin-bottom: 0.5em;
+}
+
+.menu-page .whisper,
+.listing-page .whisper {
+  font-size: 1.35rem;
+  margin-bottom: 50px;
+}
