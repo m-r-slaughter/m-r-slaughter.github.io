@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="post-page">
+<section class="post-page{% if page.story %} post-page--story{% endif %}">
     {% if page.section == "poetry" %}
     <p class="post-eyebrow">A poem</p>
     {% elsif page.story %}

@@ -1081,6 +1081,12 @@ section.post-page .post {
   margin-right: auto;
 }
 
+/* Story chapters read as prose, so give them a proper novel-width column
+   instead of the narrow poem measure. */
+section.post-page--story .post {
+  max-width: 65ch;
+}
+
 /* Prev/Next nav: symmetric grid so both sides are always balanced,
    even if a poem is the newest or oldest (in which case the missing
    direction wraps to the other end of the section). */
