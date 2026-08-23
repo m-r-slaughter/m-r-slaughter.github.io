@@ -512,3 +512,15 @@ PAGE: ABOUT (portrait + text)
   font-style: italic;
   margin-top: 2em;
 }
+
+/* Comfortable reading size on pages of prose (about + individual posts).
+   Bumped from the browser default of 16px so readers don't have to zoom. */
+.about-page,
+.post {
+  font-size: 1.125em;
+}
+
+.about-page p,
+.about-page li {
+  line-height: 1.6;
+}
