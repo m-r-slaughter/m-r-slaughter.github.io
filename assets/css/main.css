@@ -1177,3 +1177,28 @@ section.post-page > nav.post-nav {
   box-sizing: border-box !important;
   text-align: initial !important;
 }
+
+/**********************************
+GRIMOIRE — NEUTRALIZE OLD NAV SPAN POSITIONING
+***********************************/
+
+/* The original template had a fancy sliding hover effect that positioned
+   any <span> inside a nav <a> absolutely at top-left. Our new Prev/Next
+   layout uses spans for the label and title, so they were being sucked up
+   into the corner of the page. Reset them to normal flow. */
+.post-nav a > span,
+.post-nav .post-nav-label,
+.post-nav .post-nav-title {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  overflow: visible !important;
+  display: block !important;
+}
+.post-nav a > span::before {
+  content: none !important;
+  display: none !important;
+}
