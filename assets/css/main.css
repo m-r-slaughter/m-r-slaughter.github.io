@@ -1119,3 +1119,43 @@ section.post-page .post {
   font-size: 15px;
   color: #e8dcc0;
 }
+
+/**********************************
+GRIMOIRE — ABOUT PAGE LAYOUT
+***********************************/
+
+/* Two-column layout matching the mockup: portrait on the left, text on the right. */
+section.about-page {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto !important;
+  clear: both;
+}
+
+@media (max-width: 720px) {
+  section.about-page {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  section.about-page .about-portrait {
+    justify-self: center;
+    max-width: 220px;
+  }
+  section.about-page .about-text { text-align: left; }
+}
+
+.about-portrait {
+  position: sticky;
+  top: 20px;
+}
+
+.about-portrait-frame {
+  position: relative;
+  padding: 14px;
+  max-width: none;
+  margin: 0;
+}
