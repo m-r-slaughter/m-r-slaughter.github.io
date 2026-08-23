@@ -5,8 +5,6 @@ title: About - M R Slaughter
 <section class="about-page">
     <h2>About Me</h2>
 
-    <img src="/assets/images/mrs-portrait.jpg" alt="M R Slaughter" class="about-photo">
-
     <div class="about-text">
         <p>Welcome into my mind! It can be a bit intimidating, but I promise we will get along famously. I can tell that you are very eager to know who is behind the name M. R. Slaughter. I will lift the veil for you to peek, yes?</p>
 
@@ -20,4 +18,6 @@ title: About - M R Slaughter
 
         <p class="signoff">With Love,<br>M. R. Slaughter</p>
     </div>
+
+    <img src="/assets/images/mrs-portrait.jpg" alt="M R Slaughter" class="about-photo">
 </section>
