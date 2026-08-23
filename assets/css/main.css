@@ -1014,3 +1014,50 @@ h1.post-title {
 
 /* -------- Selection color across the site -------- */
 ::selection { background: #7a1c1c; color: #e8dcc0; }
+
+
+/**********************************
+GRIMOIRE — LAYOUT & COLOR FIXES
+***********************************/
+
+/* Rebuild the header without floats so page titles can't overlap the nav.
+   Puts logo on the left, nav on the right, wraps cleanly on narrow screens. */
+header {
+  float: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 40px;
+  padding: 20px 0 12px;
+  width: 100%;
+  border-bottom: 1px solid rgba(161, 126, 70, 0.18);
+}
+#logo {
+  float: none;
+  width: auto;
+  margin: 0;
+  text-align: left;
+}
+@media (max-width: 660px) {
+  header { justify-content: center; text-align: center; }
+  #logo { width: 100%; text-align: center; }
+}
+nav {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Safety: page sections start on their own line, never wrap around a floated header. */
+.menu-page, .listing-page, .about-page, .post-page, .landing-hero { clear: both; }
+
+/* Page titles across the site now share the ember red used on post titles */
+.menu-page h2,
+.listing-page h2,
+.about-page h2 {
+  color: #c9484b;
+  text-shadow: 0 0 22px rgba(201, 72, 75, 0.20);
+}
