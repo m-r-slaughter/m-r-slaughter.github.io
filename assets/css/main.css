@@ -1223,3 +1223,23 @@ GRIMOIRE — TITLE & WHISPER SIZE
   font-size: 1.35rem;
   margin-bottom: 50px;
 }
+
+/**********************************
+GRIMOIRE — ABOUT PAGE FONT & EMBER ACCENTS
+***********************************/
+
+/* Paragraphs now use the grimoire prose face instead of the site-wide typewriter. */
+.about-page .about-text p {
+  font-family: "IM Fell English", Georgia, serif;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+/* "About Me" title and the sign-off both in ember red, with a soft glow. */
+.about-page h2 {
+  color: #c9484b !important;
+  text-shadow: 0 0 22px rgba(201, 72, 75, 0.20);
+}
+.about-page .signoff {
+  color: #c9484b !important;
+}
