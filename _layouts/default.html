@@ -20,34 +20,15 @@
     {% if page.dir != "/" %}
     <header>
         <a href="/" id="logo">
-            <h1 class="logo">M &middot; R <span class="logo-slaughter">Slaughter</span></h1>
+            <h1 class="logo"><span class="logo-initials">M &middot; R</span> <span class="logo-surname">Slaughter</span></h1>
         </a>
         {% if page.dir != "/slaughter-house/" %}
         <nav>
             <ul>
-                {% if page.dir == "/" %}
-                <li><a href="/slaughter-house/" class="selected"><span data-content="Slaughter House" aria-hidden="true"></span>Slaughter House</a></li>
-                {% else %}
-                <li><a href="/slaughter-house/"><span data-content="Slaughter House" aria-hidden="true"></span>Slaughter House</a></li>
-                {% endif %}
-
-                {% if page.dir == "/about/" %}
-                <li><a href="/about" class="selected"><span data-content="About" aria-hidden="true"></span>About</a></li>
-                {% else %}
-                <li><a href="/about"><span data-content="About" aria-hidden="true"></span>About</a></li>
-                {% endif %}
-
-                {% if page.dir == "/poe-log/" %}
-                <li><a href="/poe-log" class="selected"><span data-content="Poe-log" aria-hidden="true"></span>Poe-log</a></li>
-                {% else %}
-                <li><a href="/poe-log"><span data-content="Poe-log" aria-hidden="true"></span>Poe-log</a></li>
-                {% endif %}
-
-                {% if page.dir == "/slashing-stories/" %}
-                <li><a href="/slashing-stories" class="selected"><span data-content="Slashing Stories" aria-hidden="true"></span>Slashing Stories</a></li>
-                {% else %}
-                <li><a href="/slashing-stories"><span data-content="Slashing Stories" aria-hidden="true"></span>Slashing Stories</a></li>
-                {% endif %}
+                <li><a href="/slaughter-house/"{% if page.dir == "/slaughter-house/" %} class="is-current"{% endif %}>Slaughter House</a></li>
+                <li><a href="/poe-log/"{% if page.dir == "/poe-log/" %} class="is-current"{% endif %}>Poe-log</a></li>
+                <li><a href="/slashing-stories/"{% if page.dir == "/slashing-stories/" %} class="is-current"{% endif %}>Slashing Stories</a></li>
+                <li><a href="/about/"{% if page.dir == "/about/" %} class="is-current"{% endif %}>About</a></li>
             </ul>
         </nav>
         {% endif %}

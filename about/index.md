@@ -3,6 +3,7 @@ layout: default
 title: About - M R Slaughter
 ---
 <section class="about-page">
+    <p class="about-subhead">Behind the veil</p>
     <h2>About Me</h2>
 
     <div class="about-text">
@@ -19,5 +20,7 @@ title: About - M R Slaughter
         <p class="signoff">With Love,<br>M. R. Slaughter</p>
     </div>
 
-    <img src="/assets/images/mrs-portrait.jpg" alt="M R Slaughter" class="about-photo">
+    <div class="about-portrait-frame">
+        <img src="/assets/images/mrs-portrait.jpg" alt="M R Slaughter" class="about-photo">
+    </div>
 </section>

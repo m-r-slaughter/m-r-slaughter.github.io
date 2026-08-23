@@ -1,11 +1,47 @@
 ---
 layout: default
 ---
-    <section>
-        <h2>{{ page.title }}</h2>
-        <p class="meta">{% if page.date_display %}{{ page.date_display }}{% else %}{{ page.date | date_to_string }}{% endif %}</p>
+<section class="post-page">
+    {% if page.section == "poetry" %}
+    <p class="post-eyebrow">A poem</p>
+    {% elsif page.section == "stories" %}
+    <p class="post-eyebrow">A story</p>
+    {% endif %}
 
-        <div class="post">
-            {{ content }}
-        </div>
-    </section>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-date">{% if page.date_display %}{{ page.date_display }}{% else %}{{ page.date | date_to_string }}{% endif %}</p>
+
+    <div class="post">
+        {{ content }}
+    </div>
+
+    <svg class="post-close" width="140" height="34" viewBox="0 0 140 34" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+        <path d="M10 17 Q40 6 68 17"/>
+        <path d="M130 17 Q100 6 72 17"/>
+        <circle cx="70" cy="17" r="6" fill="currentColor" stroke="none"/>
+        <circle cx="70" cy="17" r="3.6" fill="#100b08" stroke="none"/>
+        <circle cx="72" cy="14" r="1.5" fill="currentColor" stroke="none"/>
+    </svg>
+
+    {% assign section_posts = site.posts | where: "section", page.section %}
+    {% for post in section_posts %}
+        {% if post.url == page.url %}
+            {% assign idx = forloop.index0 %}
+            {% assign total = forloop.length %}
+        {% endif %}
+    {% endfor %}
+    {% if total > 1 %}
+    <nav class="post-nav">
+        {% assign prev_idx = idx | plus: 1 %}
+        {% assign next_idx = idx | minus: 1 %}
+        {% if prev_idx < total %}
+            {% assign prev_post = section_posts[prev_idx] %}
+            <a href="{{ prev_post.url }}"><span class="post-nav-label">&larr; Previous</span>{{ prev_post.title }}</a>
+        {% else %}<span></span>{% endif %}
+        {% if next_idx >= 0 %}
+            {% assign next_post = section_posts[next_idx] %}
+            <a href="{{ next_post.url }}" style="text-align:right;"><span class="post-nav-label">Next &rarr;</span>{{ next_post.title }}</a>
+        {% else %}<span></span>{% endif %}
+    </nav>
+    {% endif %}
+</section>
