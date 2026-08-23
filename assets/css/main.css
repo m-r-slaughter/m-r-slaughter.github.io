@@ -1061,3 +1061,61 @@ nav {
   color: #c9484b;
   text-shadow: 0 0 22px rgba(201, 72, 75, 0.20);
 }
+
+/**********************************
+GRIMOIRE — POST PAGE FIXES
+***********************************/
+
+/* Force the poem to actually sit centered in the wrapper (higher specificity
+   to beat any earlier margin rule that was leaving it flushed to the left). */
+section.post-page {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Poem body: keep it visually anchored by centering the whole block, but
+   let the lines themselves stay left-aligned (like a book). */
+section.post-page .post {
+  max-width: 44ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prev/Next nav: symmetric grid so both sides are always balanced,
+   even if a poem is the newest or oldest (in which case the missing
+   direction wraps to the other end of the section). */
+.post-nav {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(161, 126, 70, 0.28);
+  margin-top: 20px;
+}
+.post-nav a {
+  display: block;
+  color: #b8a988;
+  text-decoration: none;
+  font-family: "IM Fell English SC", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 11px;
+  transition: color .25s;
+}
+.post-nav a:hover { color: #e8dcc0; }
+.post-nav .post-nav-prev  { text-align: left; }
+.post-nav .post-nav-next  { text-align: right; }
+.post-nav .post-nav-label {
+  display: block;
+  color: #a17e46;
+  letter-spacing: 0.35em;
+  margin-bottom: 6px;
+}
+.post-nav .post-nav-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 15px;
+  color: #e8dcc0;
+}

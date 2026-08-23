@@ -31,17 +31,26 @@ layout: default
         {% endif %}
     {% endfor %}
     {% if total > 1 %}
+    {%- comment -%}
+      Posts are newest-first in Liquid.  "Next" (more recent) is index-1;
+      "Previous" (older) is index+1.  When at an edge, wrap to the other end
+      so the reader always sees both directions of the trail.
+    {%- endcomment -%}
+    {% assign prev_i = idx | plus: 1 %}
+    {% if prev_i >= total %}{% assign prev_i = 0 %}{% endif %}
+    {% assign next_i = idx | minus: 1 %}
+    {% if next_i < 0 %}{% assign next_i = total | minus: 1 %}{% endif %}
+    {% assign prev_post = section_posts[prev_i] %}
+    {% assign next_post = section_posts[next_i] %}
     <nav class="post-nav">
-        {% assign prev_idx = idx | plus: 1 %}
-        {% assign next_idx = idx | minus: 1 %}
-        {% if prev_idx < total %}
-            {% assign prev_post = section_posts[prev_idx] %}
-            <a href="{{ prev_post.url }}"><span class="post-nav-label">&larr; Previous</span>{{ prev_post.title }}</a>
-        {% else %}<span></span>{% endif %}
-        {% if next_idx >= 0 %}
-            {% assign next_post = section_posts[next_idx] %}
-            <a href="{{ next_post.url }}" style="text-align:right;"><span class="post-nav-label">Next &rarr;</span>{{ next_post.title }}</a>
-        {% else %}<span></span>{% endif %}
+        <a href="{{ prev_post.url }}" class="post-nav-prev">
+            <span class="post-nav-label">&larr; Previous</span>
+            <span class="post-nav-title">{{ prev_post.title }}</span>
+        </a>
+        <a href="{{ next_post.url }}" class="post-nav-next">
+            <span class="post-nav-label">Next &rarr;</span>
+            <span class="post-nav-title">{{ next_post.title }}</span>
+        </a>
     </nav>
     {% endif %}
 </section>
