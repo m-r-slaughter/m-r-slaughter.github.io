@@ -1159,3 +1159,21 @@ section.about-page {
   max-width: none;
   margin: 0;
 }
+
+/**********************************
+GRIMOIRE — POST NAV WIDTH FIX
+***********************************/
+
+/* Force the prev/next strip to fill the poem’s width, no matter what
+   earlier rule is trying to shrink it. */
+section.post-page > nav.post-nav {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 20px 0 0 !important;
+  padding: 26px 0 0 !important;
+  box-sizing: border-box !important;
+  text-align: initial !important;
+}
