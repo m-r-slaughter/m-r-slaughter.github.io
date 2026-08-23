@@ -565,16 +565,31 @@ PAGE: LANDING (grimoire direction)
   margin-bottom: 18px;
 }
 
-/* The name keeps her horror typeface so the landing still reads as her site,
-   just given breathing room and a warm red glow rather than a hard pure red. */
+/* Landing name: split treatment.
+   "M · R" in an elegant italic serif; "Slaughter" in the dripping Nosifer face. */
 .landing-name {
-  font-family: "Ghastly Panic", "Cormorant Garamond", serif;
-  font-weight: normal;
-  font-size: clamp(4rem, 12vw, 8.5rem);
-  line-height: 0.95;
-  color: red;
   margin: 0;
-  text-shadow: 0 0 40px rgba(201, 72, 75, 0.35);
+  line-height: 0.95;
+  font-weight: normal;
+}
+.landing-initials {
+  display: block;
+  font-family: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #e8dcc0;
+  font-size: clamp(3.4rem, 9vw, 6.6rem);
+  letter-spacing: 0.01em;
+  text-shadow: 0 0 34px rgba(201, 72, 75, 0.18);
+}
+.landing-surname {
+  display: block;
+  font-family: "Nosifer", "Ghastly Panic", serif;
+  color: #c9484b;
+  font-size: clamp(2rem, 5.5vw, 3.6rem);
+  letter-spacing: 0.04em;
+  margin-top: 12px;
+  text-shadow: 0 0 24px rgba(201, 72, 75, 0.35);
 }
 
 .landing-tag {
