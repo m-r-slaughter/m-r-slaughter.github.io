@@ -1,0 +1,6 @@
+# Slashing Stories shelf.
+# Each entry adds a story to the shelf and gives it its own page.
+# Chapters live in _posts/ and point back here with `story: <slug>`.
+- slug: leashes-and-chains
+  title: Leashes and Chains
+  teaser: They call it a connection. The elite call it a chain.

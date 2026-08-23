@@ -27,7 +27,7 @@
             <ul>
                 <li><a href="/slaughter-house/"{% if page.dir == "/slaughter-house/" %} class="is-current"{% endif %}>Slaughter House</a></li>
                 <li><a href="/poe-log/"{% if page.dir == "/poe-log/" %} class="is-current"{% endif %}>Poe-log</a></li>
-                <li><a href="/slashing-stories/"{% if page.dir == "/slashing-stories/" %} class="is-current"{% endif %}>Slashing Stories</a></li>
+                <li><a href="/slashing-stories/"{% if page.dir contains "/slashing-stories/" %} class="is-current"{% endif %}>Slashing Stories</a></li>
                 <li><a href="/about/"{% if page.dir == "/about/" %} class="is-current"{% endif %}>About</a></li>
             </ul>
         </nav>

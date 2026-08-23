@@ -7,13 +7,12 @@ title: Slashing Stories - M R Slaughter
     <p class="whisper">Longer tales. Grim, mostly. Sometimes tender.</p>
 
     <div class="entries">
-        {% assign items = site.posts | where: "section", "stories" %}
-        {% for post in items %}
+        {% assign stories = site.data.stories %}
+        {% for story in stories %}
         <article class="entry">
-            <div class="entry-date">{% if post.date_display %}{{ post.date_display }}{% else %}{{ post.date | date: "%b &middot; %Y" }}{% endif %}</div>
             <div class="entry-body">
-                <h3><a href="{{ post.url }}" class="entry-link">{{ post.title }}</a></h3>
-                <p class="entry-preview">{{ post.content | strip_html | truncatewords: 18 }}</p>
+                <h3><a href="/slashing-stories/{{ story.slug }}/" class="entry-link">{{ story.title }}</a></h3>
+                <p class="entry-preview">{{ story.teaser }}</p>
             </div>
         </article>
         {% unless forloop.last %}
@@ -24,7 +23,7 @@ title: Slashing Stories - M R Slaughter
         </svg>
         {% endunless %}
         {% endfor %}
-        {% if items.size == 0 %}
+        {% if stories.size == 0 %}
         <p class="entry-empty">Nothing here yet.</p>
         {% endif %}
     </div>

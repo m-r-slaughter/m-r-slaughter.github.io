@@ -4,6 +4,9 @@ layout: default
 <section class="post-page">
     {% if page.section == "poetry" %}
     <p class="post-eyebrow">A poem</p>
+    {% elsif page.story %}
+        {% assign parent_story = site.data.stories | where: "slug", page.story | first %}
+        <p class="post-eyebrow"><a href="/slashing-stories/{{ page.story }}/">{{ parent_story.title }}</a></p>
     {% elsif page.section == "stories" %}
     <p class="post-eyebrow">A story</p>
     {% endif %}
@@ -23,8 +26,18 @@ layout: default
         <circle cx="72" cy="14" r="1.5" fill="currentColor" stroke="none"/>
     </svg>
 
-    {% assign section_posts = site.posts | where: "section", page.section %}
-    {% for post in section_posts %}
+    {% if page.story %}
+        {%- comment -%}
+          Chapters of a story navigate in reading order (chapter 1 → 2 → 3),
+          wrapping at the ends the same way section nav does.
+        {%- endcomment -%}
+        {% assign nav_posts = site.posts | where: "story", page.story | sort: "chapter" %}
+        {% assign is_chapter_nav = true %}
+    {% else %}
+        {% assign nav_posts = site.posts | where: "section", page.section %}
+        {% assign is_chapter_nav = false %}
+    {% endif %}
+    {% for post in nav_posts %}
         {% if post.url == page.url %}
             {% assign idx = forloop.index0 %}
             {% assign total = forloop.length %}
@@ -32,16 +45,25 @@ layout: default
     {% endfor %}
     {% if total > 1 %}
     {%- comment -%}
-      Posts are newest-first in Liquid.  "Next" (more recent) is index-1;
-      "Previous" (older) is index+1.  When at an edge, wrap to the other end
-      so the reader always sees both directions of the trail.
+      For section nav (poems, standalone stories): posts are newest-first,
+      so "Next" (more recent) is index-1 and "Previous" (older) is index+1.
+      For chapter nav: posts are sorted oldest-first by chapter number,
+      so "Next" is index+1 and "Previous" is index-1.
+      Either way we wrap at the edges so both directions stay visible.
     {%- endcomment -%}
-    {% assign prev_i = idx | plus: 1 %}
-    {% if prev_i >= total %}{% assign prev_i = 0 %}{% endif %}
-    {% assign next_i = idx | minus: 1 %}
-    {% if next_i < 0 %}{% assign next_i = total | minus: 1 %}{% endif %}
-    {% assign prev_post = section_posts[prev_i] %}
-    {% assign next_post = section_posts[next_i] %}
+    {% if is_chapter_nav %}
+        {% assign prev_i = idx | minus: 1 %}
+        {% if prev_i < 0 %}{% assign prev_i = total | minus: 1 %}{% endif %}
+        {% assign next_i = idx | plus: 1 %}
+        {% if next_i >= total %}{% assign next_i = 0 %}{% endif %}
+    {% else %}
+        {% assign prev_i = idx | plus: 1 %}
+        {% if prev_i >= total %}{% assign prev_i = 0 %}{% endif %}
+        {% assign next_i = idx | minus: 1 %}
+        {% if next_i < 0 %}{% assign next_i = total | minus: 1 %}{% endif %}
+    {% endif %}
+    {% assign prev_post = nav_posts[prev_i] %}
+    {% assign next_post = nav_posts[next_i] %}
     <nav class="post-nav">
         <a href="{{ prev_post.url }}" class="post-nav-prev">
             <span class="post-nav-label">&larr; Previous</span>
