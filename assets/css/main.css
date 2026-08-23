@@ -626,6 +626,6 @@ PAGE: LANDING (grimoire direction)
   width: clamp(70px, 14vw, 120px);
   height: auto;
   margin: 18px auto 0;
-  color: red;
+  color: #c9484b;
   filter: drop-shadow(0 0 18px rgba(201, 72, 75, 0.35));
 }
