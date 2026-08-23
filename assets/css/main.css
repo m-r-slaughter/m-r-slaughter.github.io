@@ -274,9 +274,25 @@ PAGE: CONTACT
 COLORS
 ***********************************/
 
-/* site body */
+/* site body — warm ink with subtle red and gold radial glows for atmosphere */
 body {
-  background-color: black;
+  background:
+    radial-gradient(1200px 800px at 20% -10%, rgba(122, 28, 28, 0.12), transparent 60%),
+    radial-gradient(900px 700px at 110% 10%, rgba(161, 126, 70, 0.08), transparent 60%),
+    #100b08;
+  background-attachment: fixed;
+}
+
+/* Subtle paper-grain overlay so the black never feels digitally flat */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.6  0 0 0 0 0.55  0 0 0 0 0.45  0 0 0 0.9 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  z-index: 0;
 }
 
 /* green header */
@@ -530,6 +546,7 @@ PAGE: LANDING (grimoire direction)
 ***********************************/
 
 .landing-hero {
+  position: relative;
   min-height: 88vh;
   display: grid;
   place-items: center;
@@ -537,6 +554,16 @@ PAGE: LANDING (grimoire direction)
   padding: 40px 20px;
   color: #e8dcc0; /* aged parchment for prose on the landing */
 }
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 420px at 50% 45%, rgba(122, 28, 28, 0.22), transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+.landing-frame { position: relative; z-index: 1; }
 
 .landing-frame {
   max-width: 640px;
