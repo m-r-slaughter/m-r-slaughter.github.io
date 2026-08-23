@@ -12,7 +12,11 @@ layout: default
     {% endif %}
 
     <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.character %}
+    <p class="post-date">{{ page.character }}</p>
+    {% else %}
     <p class="post-date">{% if page.date_display %}{{ page.date_display }}{% else %}{{ page.date | date_to_string }}{% endif %}</p>
+    {% endif %}
 
     <div class="post">
         {{ content }}

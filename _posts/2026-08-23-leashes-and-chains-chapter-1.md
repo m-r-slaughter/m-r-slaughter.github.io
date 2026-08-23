@@ -5,6 +5,7 @@ date: 2026-08-23
 section: stories
 story: leashes-and-chains
 chapter: 1
+character: Izzalene
 permalink: /slashing-stories/leashes-and-chains/chapter-1/
 ---
 
