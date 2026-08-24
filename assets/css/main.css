@@ -1087,18 +1087,26 @@ section.post-page--story .post {
   max-width: 65ch;
 }
 
-/* POV break inside a story chapter — a centered, italic ember-red marker
-   that names the new POV character and clearly breaks the flow of the prose. */
+/* The POV character shown under a chapter title reads larger than a date,
+   so it lands as a real byline rather than a small-print timestamp. */
+.post-page .post-character {
+  font-size: clamp(15px, 1.6vw, 18px);
+  letter-spacing: 0.35em;
+  color: #a17e46;
+  margin-bottom: 36px;
+}
+
+/* POV break inside a story chapter — a centered small-caps marker in the
+   same tarnished-gold as the top-of-chapter byline, sized a touch larger
+   so it still clearly breaks the flow of the prose. */
 section.post-page--story .post .pov-break {
   text-align: center;
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-style: italic;
-  font-weight: 500;
-  color: #c9484b;
-  font-size: clamp(1.8rem, 3.8vw, 2.6rem);
-  letter-spacing: 0.12em;
+  font-family: "IM Fell English SC", serif;
+  color: #a17e46;
+  font-size: clamp(20px, 2.2vw, 26px);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
   margin: 3rem auto 2rem;
-  text-shadow: 0 0 20px rgba(201, 72, 75, 0.25);
 }
 
 /* Prev/Next nav: symmetric grid so both sides are always balanced,
