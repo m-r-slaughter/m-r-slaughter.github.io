@@ -1087,6 +1087,20 @@ section.post-page--story .post {
   max-width: 65ch;
 }
 
+/* POV break inside a story chapter — a centered, italic ember-red marker
+   that names the new POV character and clearly breaks the flow of the prose. */
+section.post-page--story .post .pov-break {
+  text-align: center;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #c9484b;
+  font-size: clamp(1.8rem, 3.8vw, 2.6rem);
+  letter-spacing: 0.12em;
+  margin: 3rem auto 2rem;
+  text-shadow: 0 0 20px rgba(201, 72, 75, 0.25);
+}
+
 /* Prev/Next nav: symmetric grid so both sides are always balanced,
    even if a poem is the newest or oldest (in which case the missing
    direction wraps to the other end of the section). */
